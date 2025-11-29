@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(form){
+            var username = form.t1.value;
+            var password = form.pass1.value;
+            if(username == "kislay" && password == "kislay") {
+                alert("Success");
+                return true;
+            }
+            else{
+                alert("Invalid username or password");
+                return false;
+            }
+
+        }
+        function expireLogin(username , username , ttl){
+            const now = Date.now();
+            const item = {
+                value: username,
+                expiry: now + 5,
+                
+            }
+            localStorage.setItem("username" , JSON.stringify(item));
+            
+        }
+
+    </script>
+</head>
+<body>
+    <form action="index.html" method="post">
+    <center>
+        <h1>E-Commerce</h1>
+        Username: <input type="text" name="t1"><br><br>
+        Password: <input type="text" name="pass1"><br><br>
+        <input type="submit" value="submit" onclick="return validate(this.form)" >
+    </center>
+</form>
+</body>
+</html>

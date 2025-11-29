@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+   
+</head>
+<body>
+    <header>
+        <!-- username display -->
+        <div id="user-display" ></div>
+        <h1> MyShop</h1>
+      <nav>
+         <a href="index.html">Home</a>
+         <a href="mobile.html" target="_blank">Mobile</a>
+         <a href="watch.html" target="_blank">Watches</a>
+         <a href="laptop.html" target="_blank">Laptop</a>
+         <a href="cart.html">Cart</a>
+         <a href="login1.html">Login</a>
+      </nav>
+    </header>
+    <section class="main">
+        <h2>Welcome to MyShop</h2>
+        <p>Find the best deal on top products</p>
+        <a href="product.html" class="btn">Shop Me</a>
+    </section>
+    
+    <section id="highlights">
+        <h1>Why to choose us ?</h1>
+        <ul type="null">
+            <li>✓ High Quality Products</li>
+            <li>✓ Best Price Gurantee</li>
+            <li>✓ Fast Secure delivery</li>
+            <li>✓ 24/7 Customer Support</li>
+            <li>✓ Easy return and refund</li>
+        </ul>
+    </section>
+    <footer>
+        <p>© 2025 MyShop. All Rights Reserved.</p>
+    </footer>
+    
+    <Script>
+        document.getElementById('highlights').onmouseover=f1;
+        document.getElementById('highlights').onmouseleave=f2;
+        document.getElementById('highlights').onclick=f3;
+        function f1(event){
+            this.style.color="red";
+           
+
+        }
+        function f3(event){
+              this.style.backgroundcolor= "yellow";
+        }
+        function f2(event){
+            this.style.color="green";
+
+        }
+    </Script>
+    <script>
+        let user = localStorage.getItem("loginusername");
+        if(user){
+            document.getElementById("user-display").innerText = "Welcome : " + user;
+        }
+    </script>
+</body>
+</html>

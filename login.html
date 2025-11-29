@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(form){
+            if(form2.n1.value!="kislay"){
+                alert("Enter UserName");
+                return false;
+            }
+            if(form2.pass1.value==""){
+                alert("Enter Password/Correct Password");
+                return false;
+            }
+            var pass1='admin'
+            var pass = form2.pass1.value;
+            if(pass.length!=4){
+                alert("Enter Password/Correct Password");
+                return false;
+            }
+            // if(pass.length.value=)
+        }
+
+        document.getElementById("box").onmouseover=f1;
+        function f1(event){
+            this.style.color="red";
+        }
+    </script>
+</head>
+<link rel="stylesheet" type="text/css" href="login.css">
+<body>
+    
+        <header>
+        <h1> MyShop</h1>
+      <nav>
+         <a href="index.html">Home</a>
+         <a href="product.html" target="_blank">Products</a>
+         <a href="cart.html">Cart</a>
+      </nav>
+    </header>
+    <selection >
+        <form name="form2" method="post" action="index.html">
+        <div class="form1">
+            <h1 id="box">User Login</h1>
+        <div class="username">User Name:<input type="text" name="n1"></div>
+        <div class="password">Password: <input type="password" name="pass1"> </div>
+        <div class="sub"><input type="submit" value="Submit" onclick="return validate(this.form)"> </div>
+        </div>
+    </form>
+    </selection>
+    <footer>
+        <p>© 2025 MyShop. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

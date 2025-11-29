@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Page</title>
+    <link rel="stylesheet" type="text/css" href="product.css">
+</head>
+<body>
+    <header>
+        <h1> MyShop</h1>
+      <nav>
+         <a href="index.html">Home</a>
+         <a href="product.html">Products</a>
+         <a href="cart.html"><image src="photo4.png" width="30px" height="20px"></image> Cart</a>
+      </nav>
+    </header>
+    <section class="products">
+        <div class="product">
+            <img src="photo1.avif" width="200px" height="200px" >
+            <h3>Product 1</h3>
+            <p>$100</p>
+            <button onclick="addToCart('Product 1',100)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="photo2.jpg" width="200px" height="200px">
+            <h3>Product 2</h3>
+            <p>$100</p>
+            <button onclick="addToCart('Product 2',100)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="photo3.avif" width="200px" height="200px">
+            <h3>Product 3</h3>
+            <p>$100</p>
+            <button onclick="addToCart('Product 3',100)">Add to Cart</button>
+        </div>
+        <script src="script2.js"></script>
+    </section>
+</body>
+</html>

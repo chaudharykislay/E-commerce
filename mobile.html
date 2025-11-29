@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile</title>
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <header>
+         <!-- username display -->
+        <div id="user-display" ></div>
+        <h1>🛍 MyShop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <a href="laptop.html">Laptop</a>
+            <a href="watch.html">Watches</a>
+        </nav>
+    </header>
+    <section class="products">
+        <div class="product">
+            <img src="photo10.jpg" alt="mobile1">
+            <h3>Product 1</h3>
+            <p>$300</p>
+            <button onclick="addToCart('Mobile 1',300)">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="photo11.avif" alt="mobile2">
+            <h3>Produtr 2</h3>
+            <p>$400</p>
+            <button onclick="addToCart('Mobile 2',400)">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="photo12.webp" alt="mobile3">
+            <h3>Product 3</h3>
+            <p>$500</p>
+            <button onclick="addToCart('Mobile 3',500)">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="photo13.jpg" alt="mobile4">
+            <h3>Product 4</h3>
+            <p>$600</p>
+            <button onclick="addToCart('Mobile 4',600)">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="photo14.webp" alt="mobile5">
+            <h3>Product 5</h3>
+            <p>$700</p>
+            <button onclick="addToCart('Mobile 5',700)">Add to cart</button>
+        </div>
+       
+    </section>
+    <script src="script2.js"></script>
+ <script>
+        let user = localStorage.getItem("loginusername");
+        if(user){
+            document.getElementById("user-display").innerText = "Welcome : " + user;
+        }
+    </script>
+    
+</body>
+</html>

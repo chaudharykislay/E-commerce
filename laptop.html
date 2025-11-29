@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop</title>
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+     <header>
+         <!-- username display -->
+        <div id="user-display" ></div>
+        <h1>🛍 MyShop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <a href="mobile.html">Moblile</a>
+            <a href="watch.html">Watches</a>
+        </nav>
+    </header>
+    <section class="products">
+        <div class="product">
+            <img src="photo9.jpg" alt="laptop1">
+            <h3>Product 1</h3>
+            <p>$700</p>
+            <button onclick="addToCart('Laptop 1',700)">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="photo6.jpg" alt="laptop2">
+            <h3>Product 2</h3>
+            <p>$600</p>
+            <button onclick="addToCart('Laptop 2',600)">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="photo7.jpg" alt="laptop3">
+            <h3>Product 3</h3>
+            <p>$700</p>
+            <button onclick="addToCart('Laptop 3',700)">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="photo8.jpg" alt="laptop4">
+            <h3>Product 4</h3>
+            <p>$1000</p>
+            <button onclick="addToCart('Laptop 4',1000)">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="photo9.jpg" alt="laptop5">
+            <h3>Product 5</h3>
+            <p>$900</p>
+            <button onclick="addToCart('Laptop 5',900)">Add to cart</button>
+        </div>
+        <!-- <div class="product">
+            <img src="laptop1.webp" alt="laptop6">
+            <h3>Product 6</h3>
+            <p>$100</p>
+            <button onclick="addToCart('Laptop 6',100)">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="laptop2.webp" alt="laptop7">
+            <h3>Product 7</h3>
+            <p>$400</p>
+            <button onclick="addToCart('Laptop 7',400)">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="laptop3.jpeg" alt="laptop8">
+            <h3>Product 8</h3>
+            <p>$800</p>
+            <button onclick="addToCart('Laptop 8',800)">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="laptop4.jpeg" alt="laptop9">
+            <h3>Product 9</h3>
+            <p>$1100</p>
+            <button onclick="addToCart('Laptop 9',1100)">Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="laptop5.jpg" alt="laptop10">
+            <h3>Product 10</h3>
+            <p>$1200</p>
+            <button onclick="addToCart('Laptop 10',1200)">Add to cart</button> -->
+    </section>
+    <script src="script2.js"></script>
+     <script>
+        let user = localStorage.getItem("loginusername");
+        if(user){
+            document.getElementById("user-display").innerText = "Welcome : " + user;
+        }
+    </script>
+</body>
+</html>
